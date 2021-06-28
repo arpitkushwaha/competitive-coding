@@ -876,10 +876,28 @@ void binarySum()
     cout<<s;
 }
 
+void circularArray()
+{
+    int a[5]={0};
+    int element;
+    for(int i=0; i<7; i=(i+1)%5)
+    {
+        cin>>element;
+        a[i] = element;
+        cout<<"ARRAY: ";
+        for(int j=0; j<5; j++)
+        {
+            cout<<a[j]<<", ";
+        }
+        cout<<endl;
+    }
+}
+
+
 
 int main()
 {   
-    binarySum();
+    circularArray();
     return 0;
 }
 
